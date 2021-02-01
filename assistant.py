@@ -19,7 +19,6 @@ print("\t\t  ___                    ___  ")
 print("\t\t (o o)                  (o o)")
 print("\t\t(  V  ) @Onkar Kumbhar (  V  )")
 print("\t\t--m-m--------------------m-m--\n\n\n")
-os.system("color 2")
 if option.online == 1:
     print("Ya I got it...You are online....Procedding to online mode\n")
     from gtts import gTTS
@@ -30,7 +29,6 @@ if option.online == 1:
     playsound('sample00.mp3')
     os.remove("sample00.mp3")
     name = input("Enter Your Name:-")
-    os.system("color 1")
     if name == 'onkar-boss':
         myobj = gTTS(text="Hi Boss. I miss you so much. Welcome you back.", lang="en", slow=False)
         myobj.save("sample00.mp3")
